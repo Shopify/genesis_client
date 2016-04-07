@@ -1,0 +1,21 @@
+{
+  "devices": [
+    {
+      "sku": "UNK-CN747514CG0026",
+      "created_at": "2015-08-20T00:38:37.000Z",
+      "updated_at": "2016-03-29T21:32:27.000Z",
+      "hostname": "app04.lax.example.com",
+      "status": "allocated",
+      "description": "Rack Mount Chassis",
+      "product": "PowerEdgeR820",
+      "rack_units": 2,
+      "server_class": "db2",
+      "position": 7,
+      "last_boot_at": null,
+      "type": "Server",
+      "vendor": {
+        "name": "DellInc"
+      }
+    }
+  ]
+}

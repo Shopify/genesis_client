@@ -1,5 +1,6 @@
 require 'genesis_client/version'
+require 'genesis_client/client'
 
 module GenesisClient
-  # Your code goes here...
+  USER_AGENT = "Shopify/genesis_client/#{GenesisClient::VERSION}".freeze
 end

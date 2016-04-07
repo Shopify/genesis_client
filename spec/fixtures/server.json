@@ -1,0 +1,145 @@
+{
+  "device": {
+    "sku": "UNK-CN747514CG0026",
+    "created_at": "2015-08-20T00:38:37.000Z",
+    "updated_at": "2016-03-29T21:32:27.000Z",
+    "hostname": "app02.lax.example.com",
+    "status": "allocated",
+    "description": "Rack Mount Chassis",
+    "product": "PowerEdgeR820",
+    "rack_units": 2,
+    "server_class": "db2",
+    "position": 7,
+    "last_boot_at": null,
+    "type": "Server",
+    "vendor": {
+      "name": "DellInc"
+    },
+    "properties": [{
+      "key": "CHEF_RUN_LIST",
+      "value": "role[location--lax], role[db]"
+    }, {
+      "key": "PLATFORM",
+      "value": "ubuntu 14.04"
+    }, {
+      "key": "DISK_STORAGE_TOTAL",
+      "value": "7677254041600"
+    }, {
+      "key": "SYSTEM_SERIAL_NUMBER",
+      "value": "213434"
+    }, {
+      "key": "BASEBOARD_VENDOR",
+      "value": "DellInc"
+    }, {
+      "key": "BASEBOARD_PRODUCT_NAME",
+      "value": "066N7P"
+    }, {
+      "key": "BASEBOARD_SERIAL_NUMBER",
+      "value": "CN723414C23426"
+    }, {
+      "key": "CHASSIS_VENDOR",
+      "value": "DellInc"
+    }, {
+      "key": "CHASSIS_SERIAL_NUMBER",
+      "value": "213434"
+    }],
+    "ip_addresses": [{
+      "address": "172.13.255.13"
+    }, {
+      "address": "172.13.255.1"
+    }, {
+      "address": "172.13.16.15"
+    }],
+    "zone": "lax",
+    "cpus": [{
+      "cores": 8,
+      "threads": 16,
+      "speed": 2700,
+      "product": null
+    }, {
+      "cores": 8,
+      "threads": 16,
+      "speed": 2700,
+      "product": null
+    }, {
+      "cores": 8,
+      "threads": 16,
+      "speed": 2700,
+      "product": null
+    }, {
+      "cores": 8,
+      "threads": 16,
+      "speed": 2700,
+      "product": null
+    }],
+    "network_interfaces": [{
+      "speed": 10000000000,
+      "mac_address": "b0:83:fe:dd:8c:ac",
+      "description": "Ethernet interface"
+    }, {
+      "speed": 4294967295000000,
+      "mac_address": "b0:83:fe:dd:8c:b2",
+      "description": "Ethernet interface"
+    }, {
+      "speed": 10000000000,
+      "mac_address": "b0:83:fe:dd:8c:ac",
+      "description": "Ethernet interface"
+    }],
+    "memories": [{
+      "size": 16384000000,
+      "bank": 0,
+      "description": "DIMM Synchronous Registered (Buffered) 1600 MHz"
+    }, {
+      "size": 16384000000,
+      "bank": 0,
+      "description": "DIMM Synchronous Registered (Buffered) 1600 MHz"
+    }, {
+      "size": 16384000000,
+      "bank": 0,
+      "description": "DIMM Synchronous Registered (Buffered) 1600 MHz"
+    }, {
+      "size": 16384000000,
+      "bank": 0,
+      "description": "DIMM Synchronous Registered (Buffered) 1600 MHz"
+    }, {
+      "size": 0,
+      "bank": 0,
+      "description": "Empty DIMM"
+    }, {
+      "size": 0,
+      "bank": 0,
+      "description": "Empty DIMM"
+    }, {
+      "size": 0,
+      "bank": 0,
+      "description": "Empty DIMM"
+    }, {
+      "size": 0,
+      "bank": 0,
+      "description": "Empty DIMM"
+    }, {
+      "size": 0,
+      "bank": 0,
+      "description": "Empty DIMM"
+    }],
+    "disks": [{
+      "size": 960197124096,
+      "kind": "SCSI device",
+      "description": null,
+      "serial_number": "14320ECA151C",
+      "product": "Crucial_CT960M500SSD1"
+    }, {
+      "size": 960197124096,
+      "kind": "SCSI device",
+      "description": null,
+      "serial_number": "14320ECA13D8",
+      "product": "Crucial_CT960M500SSD1"
+    }],
+    "ipmi": {
+      "username": "foo",
+      "password": "bar",
+      "address": "172.21.123.15",
+      "mac": "54:9f:35:16:ef:15"
+    }
+  }
+}
