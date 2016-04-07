@@ -40,5 +40,15 @@ module GenesisClient
       data = { message: message }
       post("/devices/#{sku}/logs", data)['log']
     end
+
+    # Create a new Log for the current Remote Action for a Device.
+    #
+    # @return [Hashie::Mash] Hash representing the log
+    # @param sku [Integer] The SKU of the device
+    # @param message [String] Log message
+    def create_device_current_remote_action_log(sku, message)
+      data = { current_action: 'true', log: { message: message } }
+      post("/devices/#{sku}/logs", data)['log']
+    end
   end
 end
