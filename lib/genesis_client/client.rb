@@ -44,7 +44,7 @@ module GenesisClient
       @connection ||= Faraday.new @endpoint do |f|
         f.request :json
         f.headers[:user_agent] = GenesisClient::USER_AGENT
-        f.headers['Token'] = @token
+        f.headers['Authorization'] = "Token token=\"#{@token}\""
 
         # f.response :logger
         f.response :mashify
