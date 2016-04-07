@@ -1,5 +1,5 @@
 require 'genesis_client/devices'
-# require 'genesis_client/remote_actions'
+require 'genesis_client/remote_actions'
 require 'faraday_middleware'
 
 module GenesisClient
@@ -12,7 +12,7 @@ module GenesisClient
     end
 
     include GenesisClient::Devices
-    # include GenesisClient::RemoteActions
+    include GenesisClient::RemoteActions
 
     private
 
