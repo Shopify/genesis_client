@@ -20,7 +20,7 @@ describe GenesisClient::Devices do
     end
   end
 
-  describe '.update_device' do
+  describe '#update_device' do
     it 'updates an existing device' do
       data = {
         status: 'spare'
@@ -29,6 +29,17 @@ describe GenesisClient::Devices do
       device = client.update_device('UNK-12354621ad45', data)
       expect(device.hostname).to eq('app02.lax.example.com')
       expect(device.status).to eq('spare')
+    end
+  end
+
+  describe '#create_device_log' do
+    it 'adds a comment to a device' do
+      data = {
+        message: 'This is a test log'
+      }
+      stub_post('/api/devices/UNK-12354621ad45/logs', data).to_return(json_response('log_entry.json'))
+      log = client.create_device_log('UNK-12354621ad45', 'This is a test log')
+      expect(log.message).to eq('This is a test log')
     end
   end
 

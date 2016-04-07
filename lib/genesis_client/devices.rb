@@ -30,5 +30,15 @@ module GenesisClient
     def update_device(sku, data)
       put("/devices/#{sku}", data)['device']
     end
+
+    # Create a new Log for a Device.
+    #
+    # @return [Hashie::Mash] Hash representing the log
+    # @param sku [Integer] The SKU of the device
+    # @param message [String] Log message
+    def create_device_log(sku, message)
+      data = { message: message }
+      post("/devices/#{sku}/logs", data)['log']
+    end
   end
 end
