@@ -1,0 +1,16 @@
+AllCops:
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  Exclude:
+    - 'bin/*'
+
+Style/EmptyLinesAroundBlockBody:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+  Exclude:
+    - 'spec/**/*'
+
+Metrics/LineLength:
+  Max: 120
