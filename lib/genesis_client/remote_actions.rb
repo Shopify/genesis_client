@@ -6,9 +6,10 @@ module GenesisClient
     # @example
     #   client = GenesisClient::Client.new
     #   client.remote_actions
-    def remote_actions(zone)
+    def remote_actions(zone, status = 'created')
       filters = {
-        zone: zone
+        zone: zone,
+        status: status
       }
       get('/remote_actions', filters)['remote_actions']
     end
