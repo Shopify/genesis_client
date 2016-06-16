@@ -22,6 +22,14 @@ module GenesisClient
       get("/devices/#{sku}")['device']
     end
 
+    # Create a new Device.
+    #
+    # @return [Hashie::Mash] Hash representing the device
+    # @param sku [Integer] The SKU of the new device
+    def create_device(sku)
+      post('/devices', sku: sku)['device']
+    end
+
     # Modify an existing Device.
     #
     # @return [Hashie::Mash] Hash representing the device
