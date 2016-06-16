@@ -25,7 +25,7 @@ module GenesisClient
     # Create a new Device.
     #
     # @return [Hashie::Mash] Hash representing the device
-    # @param sku [Integer] The SKU of the new device
+    # @param sku [String] The SKU of the new device
     def create_device(sku)
       post('/devices', sku: sku)['device']
     end
@@ -33,7 +33,7 @@ module GenesisClient
     # Modify an existing Device.
     #
     # @return [Hashie::Mash] Hash representing the device
-    # @param sku [Integer] The SKU of the device
+    # @param sku [String] The SKU of the device
     # @param data [Hash] Device attributes to update
     def update_device(sku, data)
       put("/devices/#{sku}", data)['device']
@@ -42,7 +42,7 @@ module GenesisClient
     # Create a new Log for a Device.
     #
     # @return [Hashie::Mash] Hash representing the log
-    # @param sku [Integer] The SKU of the device
+    # @param sku [String] The SKU of the device
     # @param message [String] Log message
     def create_device_log(sku, message)
       data = { message: message }
@@ -52,7 +52,7 @@ module GenesisClient
     # Create a new Log for the current Remote Action for a Device.
     #
     # @return [Hashie::Mash] Hash representing the log
-    # @param sku [Integer] The SKU of the device
+    # @param sku [String] The SKU of the device
     # @param message [String] Log message
     def create_device_current_remote_action_log(sku, message)
       data = { current_action: 'true', log: { message: message } }
