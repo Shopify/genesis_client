@@ -30,7 +30,7 @@ module GenesisClient
 
     def request(method, path, data = {})
       res = connection.send(method, "api/#{path}", data)
-      if res.success? && !res.body.empty? && res.body != ' '
+      if res.success? && !res.body.nil? && !res.body.empty? && res.body != ' '
         res.body
       else
         res
