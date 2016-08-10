@@ -57,7 +57,7 @@ module GenesisClient
     # @param message [String] Log message
     def create_device_current_remote_action_log(sku, message)
       data = { current_action: 'true', log: { message: message } }
-      post("/devices/#{sku}/logs", data)['log']
+      post("/devices/#{sku}/logs", data)
     end
   end
 end
